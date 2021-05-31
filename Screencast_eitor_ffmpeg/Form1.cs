@@ -25,7 +25,7 @@ namespace Screencast_eitor_ffmpeg
             fppRun.StartInfo.UseShellExecute = false;
             fppRun.StartInfo.CreateNoWindow = true;
             fppRun.Start();
-            Thread.Sleep(1000);
+            Thread.Sleep(1000);//comment2
             File.Delete(workFolder + "fpp.cmd");
         }
         private void Thumbnails(string filename, int seconds)
